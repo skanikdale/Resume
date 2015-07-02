@@ -1,0 +1,76 @@
+// $("#main").append("Sameer Kanikdale");
+ // $("#test").append("Sam's");
+
+ // var email = "skanikdale@gmail.com";
+
+ // var newemail = email.replace("gmail", "ptc");
+
+var formattedname = HTMLheaderName.replace("%data%", "Sameer Kanikdale");
+var formattedRole = HTMLheaderRole.replace("%data%", "Web developer");
+
+$("#header").append(formattedname);
+$("#header").append(formattedRole);
+
+var bio = {
+	"name" : "Sameer",
+	"role" : "Web developer",
+	"contacts" : {
+		"mobile" : 9922428972,
+		"email" : "skanikdale@gmail.com",
+		"github" : "skanikdale",
+		"location" : "Pune, India"
+	},
+
+	"skills" : ["awesomeness" , "delivering things"],
+
+	"welcomeMessage" : "Welcome !!!",
+	"bioPic" : "images/my.jpg"
+};
+
+// $("#header").append(bio.name);
+
+var work = {};
+
+work.currentEmployer = "PTC";
+work.currentJobPosition = "Senior Tech lead";
+work.yearsWorked = 4;
+work.city = "Pune";
+
+
+var test = {
+   "array" : [ { "name" : "test3"}, { "name" : "tere"}]
+};
+
+var education = {
+	"schools" : [
+	  {
+		"name" : "Mechanical Engineering",
+		"school" : "YCCE",
+		"years" : 4,
+		"city" : "Nagpur"
+      },
+      {
+		"name" : "MBA",
+		"school" : "SCMHRD",
+		"years" : 2,
+		"city" : "Pune"
+      }
+    ]
+ },
+
+ "onlinecourse" : {
+ 	"title" : "JavaScript",
+ 	"school" : "Udacity",
+ 	"dates" : 2014,
+ 	"url" : "www.Udacity.com"
+ }
+
+};
+
+$("#header").append(work["currentJobPosition"] + " ");
+$("#header").append(education.name);
+
+
+
+
+ 
